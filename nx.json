@@ -1,29 +1,22 @@
 {
   "implicitDependencies": {
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": "*"
-    },
+    "package.json": { "dependencies": "*", "devDependencies": "*" },
     ".eslintrc.json": "*"
   },
-  "affected": {
-    "defaultBase": "master"
-  },
+  "affected": { "defaultBase": "master" },
   "npmScope": "nx-example",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "accessToken": "YmM1MGMwMTUtNzAyYi00ZjM4LWExNGUtZDM2ZjYyNzNiODAxfHJlYWQ=",
+        "accessToken": "ZjdhYzMzNWYtZTM1MC00YThhLWI2YTItNjc3YWRlOTc2ZDNhfHJlYWQtd3JpdGU=",
         "cacheableOperations": ["build", "lint", "test"],
         "parallel": 1
       }
     }
   },
   "cli": {
-    "warnings": {
-      "versionMismatch": false
-    },
+    "warnings": { "versionMismatch": false },
     "packageManager": "yarn",
     "analytics": false
   },
@@ -32,20 +25,12 @@
       "unitTestRunner": "jest",
       "e2eTestRunner": "cypress"
     },
-    "@nrwl/angular:library": {
-      "unitTestRunner": "jest"
-    },
+    "@nrwl/angular:library": { "unitTestRunner": "jest" },
     "@nrwl/angular": {
-      "convert-tslint-to-eslint": {
-        "removeTSLintIfNoMoreTSLintTargets": true
-      }
+      "convert-tslint-to-eslint": { "removeTSLintIfNoMoreTSLintTargets": true }
     }
   },
   "defaultProject": "products",
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "targetDefaults": {
-    "build": {
-      "dependsOn": ["^build"]
-    }
-  }
+  "targetDefaults": { "build": { "dependsOn": ["^build"] } }
 }
